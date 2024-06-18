@@ -8,3 +8,4 @@ function sendEmail() {
 
     emailjs.send("service_xto1di7", "template_ewqot38", params).then(alert("Email Sent!!"))
 }
+

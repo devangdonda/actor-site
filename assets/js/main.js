@@ -257,4 +257,3 @@ playPauseButton.addEventListener('click', () => {
         playPauseIcon.className = 'bi bi-play-btn';
     }
 });
-  
