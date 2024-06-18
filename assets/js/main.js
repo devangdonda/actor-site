@@ -243,3 +243,18 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+const playPauseButton = document.getElementById('playPauseButton');
+audio.volume = 0.2;
+const audio = document.getElementById('backgroundMusic');
+const playPauseIcon = playPauseButton.getElementById('pauseIcon');
+playPauseButton.addEventListener('click', () => {
+    if (audio.paused) {
+        audio.play();
+        playPauseIcon.className = 'bi bi-pause-btn';
+    } else {
+        audio.pause();
+        playPauseIcon.className = 'bi bi-play-btn';
+    }
+});
+  
